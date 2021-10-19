@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title> Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <img id="dark-mode"  src="night-mode.png" onclick="return toggle_mode()">
+    <center>
+        
+       <b><h2>Enter your name</h2></b>
+       <input type="text" id="name">
+       <br>
+       <br>
+       <button id="submit" onclick="return game()"> Submit </button>
+       <h1>Choose Your Choice</h1>
+        <div class="user">
+            <h1 id="user">User</h1>
+           <img src="rock.png" alt="rock" id="rock">
+           <img src="paper.png" alt="rock" id="paper">
+            <img src="Scissors.png" alt="rock" id="scissors">
+        </div>
+        <div class="computer">
+            <h1 id="computer">Computer</h1>
+            <img src="rock.png" alt="rock" id="rock">
+            <img src="paper.png" alt="rock" id="paper">
+             <img src="Scissors.png" alt="rock" id="scissors">
+         </div>
+        <h1 id="comp"></h1>
+        
+        <div class="user-display">
+            <img src="" id="disp" alt="">
+            <h3 id="user-input"></h3>
+        </div>
+        <div class="computer-display">
+            <img src="" id="comp-disp" alt="">
+            <h3 id="comp-input"></h3>
+        </div>
+        <h1 id="result"></h1>
+        <button id="play-again" onclick="window.location.reload()">Play Again</button>
+    </center>
+       
+       
+
+    <script src="index.js" charset="utf-8"></script>
+
+
+</body>
+</html>
